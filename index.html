@@ -255,7 +255,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white bg-dark">
-            <div class="container"><small>Copyright &copy; Edicrei Marcondes 2023</small></div>
+            <div class="container"><small>Copyright &copy; Edicrei Marcondes </small><p id="demo"></p></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -479,6 +479,11 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("demo").innerHTML = year;
+        </script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
